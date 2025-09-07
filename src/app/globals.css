@@ -14,13 +14,33 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:monospace
 }
+.title{
+  line-height: 50px;
+  font-family:monospace
+
+}
+.scoller{
+    height: 200px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  /* box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.1); */
+  /* scrollbar-width: thin; */
+  overflow-y: hidden;
+    scrollbar-color: #7b7b7b transparent; 
+
+}
+
+
+
+
