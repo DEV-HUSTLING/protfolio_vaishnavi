@@ -4,7 +4,7 @@ import Testimonial from "./testimonial/page"
 import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Link from "next/link";
 export default function Home() {
   const sectionToScrollToRef = useRef(null)
   useEffect(() => {
@@ -20,7 +20,8 @@ export default function Home() {
     <div className="flex flex-col" ref={sectionToScrollToRef}>
       <header className="fixed bg-gray-300 w-full flex float-right ">
         <nav className="flex gap-12 p-4 w-full text-lg justify-end">
-          <a className="cursor-pointer" href=""><u>Know Me More</u></a>
+          <Link className="cursor-pointer" href="/">Home</Link>
+          <Link className="cursor-pointer" href="/knowMeMore"><u>Know Me More</u></Link>
           <a  className="cursor-pointer" href=""><u>Resume</u></a>
         </nav>
       </header>
