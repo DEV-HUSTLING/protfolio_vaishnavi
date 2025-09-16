@@ -1,12 +1,14 @@
 'use client'
 import Image from "next/image";
 import Testimonial from "./testimonial/page"
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from "next/link";
+import'./mobile.css'
 export default function Home() {
   const sectionToScrollToRef = useRef(null)
+  const [menu, setMenu] = useState(false)
   useEffect(() => {
     AOS.init();
 
@@ -18,17 +20,34 @@ export default function Home() {
 
   return (
     <div className="flex flex-col" ref={sectionToScrollToRef}>
-      <header className="fixed bg-gray-300 w-full flex float-right ">
+      <header className="fixed bg-gray-300 w-full flex float-right big-menu">
         <nav className="flex gap-12 p-4 w-full text-lg justify-end">
           <Link className="cursor-pointer" href="/">Home</Link>
           <Link className="cursor-pointer" href="/knowMeMore"><u>Know Me More</u></Link>
           <a  className="cursor-pointer" href=""><u>Resume</u></a>
         </nav>
       </header>
-      <div className="font-sans flex  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 " >
-        <div className="w-full">
+      {/* Short menu for mobiles */}
+      <button className="flex justify-items-start" onClick={()=>setMenu(!menu)} >
+        <Image
+            src='/menu.png'
+            alt="Menu Img"
+            width={60}
+            height={60}
+          />
+      </button>
+      {menu?<header className="fixed bg-gray-300 w-xs flex items-start justify-between float-right short-menu">
+        <nav className="flex flex-col gap-12 p-4 w-fit text-lg justify-end">
+          <Link className="cursor-pointer" href="/">Home</Link>
+          <Link className="cursor-pointer" href="/knowMeMore"><u>Know Me More</u></Link>
+          <a  className="cursor-pointer" href=""><u>Resume</u></a>
+        </nav>
+        <button onClick={()=>setMenu(!menu)}>close</button>
+      </header>:null}
+      <div className="cover-main font-sans flex  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20" >
+        <div className="coverImg w-full">
           <Image
-            data-aos="fade-right"
+            data-aos=" fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"

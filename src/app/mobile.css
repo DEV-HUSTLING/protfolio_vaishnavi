@@ -1,0 +1,49 @@
+.short-menu-btn{
+    visibility: hidden;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 1rem;
+  }
+  /* .coverImg {
+    display: none;
+  } */
+      .cover-main {
+        display:flex;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        gap: 0;
+        justify-content: center;
+        min-height: unset;
+        height:max-content;
+        flex-direction: column;
+    }
+
+.cover-main h1{
+    font-size: 3rem;
+}
+.Title-Content{
+    width: 80%;
+    height: 100vh;
+}
+.testimonial p{
+    font-size: xx-large;
+}
+.big-menu{
+    display: none;
+}
+.article-content{
+    width: 60vw;
+}
+.knowMemore{
+    gap: 2rem;
+}
+.short-menu-btn{
+    visibility: visible;
+}
+.know-me-cover{
+    height: 100%;
+}
+}

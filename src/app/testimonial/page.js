@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import '../globals.css'
 import Image from "next/image";
 import { motion,AnimatePresence } from "motion/react";
+import '../mobile.css'
 
 function Page() {
   const Img=[
