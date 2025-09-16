@@ -35,9 +35,7 @@ function Page() {
             <br />
             <div className='w-full h-96 p-12 flex items-center justify-center text-center bg-gray-400 know-me-cover'>
                 <h1 className='text-xl lg:text-3xl md-1/2 lg:w-3/4 font-bold text-center tracking-[0.2rem] text-white'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </h1>
+Personal Branding Strategist, full-time mom, and Founder of AYIRA PEB Solutions, helping leaders build LinkedIn authority and connecting suppliers with clients through seamless industrial roofing solutions — all whilst raising my child with <span className='bg-green-500 p-2'>strength and purpose.</span>                </h1>
             </div>
             {/* Main Content */}
             {/* Propieter */}
