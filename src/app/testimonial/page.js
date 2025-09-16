@@ -21,7 +21,7 @@ function Page() {
   return (
     <div className='h-screen overflow-hidden'>
     <div className="testimonial flex align-center justify-center h-1/2 bg-black p-4">
-        <p className='mt-24 w-full sm:w-full md:w-2/5 text-4xl text-center text-white'>
+        <p className='mt-24 w-full sm:w-full md:w-2/5 w-full text-4xl text-center text-white'>
             I will listen to your words,
             Understand you by heart,
             and build your brand that

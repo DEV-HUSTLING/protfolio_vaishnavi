@@ -46,8 +46,8 @@ export default function Home() {
             <h1
               data-aos="fade-right"
               data-aos-offset="200"
-              data-aos-delay="100"
-              data-aos-duration="2000"
+              data-aos-delay="60"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
