@@ -42,7 +42,14 @@ export default function Home() {
           <Link className="cursor-pointer" href="/knowMeMore"><u>Know Me More</u></Link>
           <a  className="cursor-pointer" href=""><u>Resume</u></a>
         </nav>
-        <button onClick={()=>setMenu(!menu)}>close</button>
+        <button onClick={()=>setMenu(!menu)}>
+          <Image
+            src='/cross.png'
+            alt="Menu Img"
+            width={60}
+            height={60}
+          />
+        </button>
       </header>:null}
       <div className="cover-main font-sans flex  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20" >
         <div className="coverImg w-full">
@@ -87,7 +94,7 @@ export default function Home() {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
-              className="text-6xl bg-yellow-300 p-2 w-fit ">Vaishnavi Reddy</h1>
+              className="text-6xl bg-yellow-300 p-2 w-fit ">Vaishnavi</h1>
           </span>
           <span className="caption w-full">
             <p 
