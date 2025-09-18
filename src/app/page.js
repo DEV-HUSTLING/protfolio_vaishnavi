@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 import Link from "next/link";
 import'./mobile.css'
 import Work from "./work/page"
+import AboutMe from "./aboutMe/page"
+
 export default function Home() {
   const sectionToScrollToRef = useRef(null)
   const [menu, setMenu] = useState(false)
@@ -21,7 +23,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col overflow-hidden" ref={sectionToScrollToRef}>
-      <header className="fixed border-b-1 w-full flex justify-between items-center px-6 big-menu" style={{backgroundColor:'#FFFBE9'}}>
+      <header className="fixed border-b-1 w-full flex justify-between z-1 items-center px-6 big-menu" style={{backgroundColor:'#FFFBE9'}}>
         <h1 className="text-2xl">Vaishnavi</h1>
         <nav className="flex gap-12 p-4 w-full text-lg justify-end">
           <Link className="cursor-pointer" href="/">Home</Link>
@@ -110,20 +112,31 @@ export default function Home() {
           </span>
         </div>
       </div>
+      {/* About me section */}
+      <AboutMe />
       {/* Work Section */}
       <Work />
+      {/* Testimonial */}
+      <Testimonial />
       {/* new section */}
-      <footer className="text-grey italic text-sm p-4 text-center flex flex-col justify-center items-center">
+      <footer className="text-grey italic text-sm p-4 text-center flex gap-8 flex-col justify-center items-center">
         <div className="flex items-center gap-8">
-          {/* <a href="https://www.linkedin.com/in/anushka-gangidi-a7377277" target="blank"><Image
-          src="/LinkedIn_icon.png"
+          <a href="https://www.linkedin.com/in/anushka-gangidi-a7377277" target="blank"><Image
+          src={"/insta.png"}
           width={30}
           height={30}
           alt="logo"
           />
-          </a> */}
+          </a>
+          <a href="https://www.linkedin.com/in/anushka-gangidi-a7377277" target="blank"><Image
+          src={"/LinkedIn_icon.png"}
+          width={30}
+          height={30}
+          alt="logo"
+          />
+          </a>
         </div>
-        {/* <p>Developed by Anushka</p> */}
+        <p className="text-gray-400">Developed by Anushka</p>
       </footer>
     </div>
   );
