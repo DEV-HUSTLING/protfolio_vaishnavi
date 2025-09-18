@@ -6,26 +6,26 @@
     font-size: 14px;
     padding: 1rem;
   }
-  /* .coverImg {
-    display: none;
-  } */
+  .coverImg {
+    width: 100vw;
+  }
       .cover-main {
         display:flex;
         align-items: center;
         width: 100%;
         padding: 0;
-        gap: 0;
+        gap: 1rem;
         justify-content: center;
         min-height: unset;
-        height:max-content;
+        height:90vh;
         flex-direction: column;
     }
 
 .cover-main h1{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .Title-Content{
-    width: 80%;
+    width: 100%;
     height: 100vh;
 }
 .testimonial p{
@@ -45,5 +45,9 @@
 }
 .know-me-cover{
     height: 100%;
+}
+.work-frames{
+    display: flex;
+    flex-direction: column;
 }
 }

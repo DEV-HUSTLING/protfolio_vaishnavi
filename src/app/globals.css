@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #FFFBE9;
   --foreground: #171717;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
+    --background: #FFFBE9;
     --foreground: #0a0a0a;
   }
 }
@@ -41,6 +41,59 @@ body {
 
 }
 
+.image-frame {
+  position: relative;
+  width:fit-content; /* Set the width and height to match your image */
+  height: 100%;
+}
+
+.l-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-top: 15px solid #FFDC5E; /* Top border */
+  border-left: 15px solid #FFDC5E; /* Left border */
+  border-radius: 5px; /* Adjust the radius for your desired curve */
+  background-color: transparent;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 100%);
+  z-index: 1; /* Make sure the border is on top of the image */
+}
+.l-border-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-bottom: 15px solid #FFDC5E; /* Top border */
+  border-right: 15px solid #FFDC5E; /* Left border */
+  border-radius: 5px; /* Adjust the radius for your desired curve */
+  background-color: transparent;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 100%);
+  z-index: 1; /* Make sure the border is on top of the image */
+}
+
+/* .l-border::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #007bff; 
+  border-right: 5px solid #007bff; 
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0 15px 0; 
+} */
+
+.image-frame img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Make sure the image is above the border */
+}
 
 
 

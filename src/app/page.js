@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from "next/link";
 import'./mobile.css'
+import Work from "./work/page"
 export default function Home() {
   const sectionToScrollToRef = useRef(null)
   const [menu, setMenu] = useState(false)
@@ -20,7 +21,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col" ref={sectionToScrollToRef}>
-      <header className="fixed bg-gray-300 w-full flex float-right big-menu">
+      <header className="fixed border-b-1 w-full flex justify-between items-center px-6 big-menu" style={{backgroundColor:'#FFFBE9'}}>
+        <h1 className="text-2xl">Vaishnavi</h1>
         <nav className="flex gap-12 p-4 w-full text-lg justify-end">
           <Link className="cursor-pointer" href="/">Home</Link>
           <Link className="cursor-pointer" href="/knowMeMore"><u>Know Me More</u></Link>
@@ -28,7 +30,7 @@ export default function Home() {
         </nav>
       </header>
       {/* Short menu for mobiles */}
-      <button className="flex justify-items-start" onClick={()=>setMenu(!menu)} >
+      <button className="invisible flex justify-items-start" onClick={()=>setMenu(!menu)} >
         <Image
             src='/menu.png'
             alt="Menu Img"
@@ -36,7 +38,7 @@ export default function Home() {
             height={60}
           />
       </button>
-      {menu?<header className="fixed bg-gray-300 w-xs flex items-start justify-between float-right short-menu">
+      {menu?<header className="fixed w-xs flex items-start justify-between float-right short-menu">
         <nav className="flex flex-col gap-12 p-4 w-fit text-lg justify-end">
           <Link className="cursor-pointer" href="/">Home</Link>
           <Link className="cursor-pointer" href="/knowMeMore"><u>Know Me More</u></Link>
@@ -44,14 +46,14 @@ export default function Home() {
         </nav>
         <button onClick={()=>setMenu(!menu)}>
           <Image
-            src='/cross.png'
+            src='/menu.png'
             alt="Menu Img"
             width={60}
             height={60}
           />
         </button>
       </header>:null}
-      <div className="cover-main font-sans flex  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20" >
+      <div className="cover-main font-sans flex  justify-between items-center min-h-screen  gap-16 sm:p-20" >
         <div className="coverImg w-full">
           <Image
             data-aos=" fade-right"
@@ -63,11 +65,11 @@ export default function Home() {
             data-aos-once="false"
             src='/titleImgpng.png'
             alt="Title Img"
-            width={600}
-            height={600}
+            width={800}
+            height={800}
           />
         </div>
-        <div className="Title-Content w-full">
+        <div className="Title-Content w-1/2">
           <span className="title flex flex-col gap-8 width-fit">
             <h1
               data-aos="fade-right"
@@ -104,12 +106,13 @@ export default function Home() {
               data-aos-duration="3000"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
-            className="text-lg italic">Full-Time Mom and LinkedIn Brand Strategist — Helping C-Suite Leaders & Working Moms Build Trusted Personal Brands Through Storytelling and Strategic Growth.</p>
+            className="text-lg italic">A 26 year old. A Daughter. A Wife. A Mother. An Entrepreneur.</p>
           </span>
         </div>
       </div>
+      {/* Work Section */}
+      <Work />
       {/* new section */}
-      <Testimonial />
       <footer className="text-grey italic text-sm p-4 text-center flex flex-col justify-center items-center">
         <div className="flex items-center gap-8">
           {/* <a href="https://www.linkedin.com/in/anushka-gangidi-a7377277" target="blank"><Image
@@ -120,7 +123,7 @@ export default function Home() {
           />
           </a> */}
         </div>
-        <p>Developed by Anushka</p>
+        {/* <p>Developed by Anushka</p> */}
       </footer>
     </div>
   );
