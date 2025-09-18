@@ -20,7 +20,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="flex flex-col" ref={sectionToScrollToRef}>
+    <div className="flex flex-col overflow-hidden" ref={sectionToScrollToRef}>
       <header className="fixed border-b-1 w-full flex justify-between items-center px-6 big-menu" style={{backgroundColor:'#FFFBE9'}}>
         <h1 className="text-2xl">Vaishnavi</h1>
         <nav className="flex gap-12 p-4 w-full text-lg justify-end">
