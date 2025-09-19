@@ -69,11 +69,10 @@
     height: 30vh;
     border-radius: 100%;
 }
-/* .testimonial{
-    position: absolute;
-    top: 15%;
+ .testimonial{
+    justify-content:end;
 }
-.slideshow{
+/*.slideshow{
     position: absolute;
     top: 50%;
 } */
