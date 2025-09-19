@@ -20,7 +20,7 @@ function Page() {
     return ()=>clearInterval(timer)
   },[autoplay])
   return (
-    <div className='h-screen overflow-hidden relative'>
+    <div className='h-screen overflow-hidden'>
     <div className="testimonial flex items-center justify-center h-1/2  ">
         <p className='mt-24 w-full sm:w-full md:w-full w-full text-4xl text-center text-black font-bold text-shadow-lg/20'>
             I will listen to your words,
