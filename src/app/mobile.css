@@ -70,7 +70,7 @@
     border-radius: 100%;
 }
  .testimonial{
-    display:none;
+    justify-content:end;
 }
 /*.slideshow{
     position: absolute;
