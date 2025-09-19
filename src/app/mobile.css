@@ -50,4 +50,31 @@
     display: flex;
     flex-direction: column;
 }
+.whoamI{
+    display: absolute;
+    display: unset;
+    top: 10%;
+    height: 100vh;
+}
+.whoamI-card{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: max-content;
+}
+.whoamI-Img{
+    width: 50vw;
+    height: 30vh;
+    border-radius: 100%;
+}
+.testimonial{
+    position: absolute;
+    top: 15%;
+}
+.slideshow{
+    position: absolute;
+    top: 50%;
+}
 }
