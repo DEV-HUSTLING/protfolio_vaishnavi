@@ -237,4 +237,10 @@
         font-weight: bold;
         font-style: italic;
     }
+    .jourFooter{
+        margin-top: 10%;
+        border-top-left-radius: 2rem !important;
+        border-top-right-radius: 2rem !important;
+
+    }
 }
