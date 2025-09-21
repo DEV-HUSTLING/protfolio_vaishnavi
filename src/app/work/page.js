@@ -4,12 +4,12 @@ import '../globals.css'
 import '../mobile.css'
 export default function page() {
     return (
-        <div className='flex flex-col gap-y-12 h-screen'>
+        <div className='absolute top-24 gap-y-16 left-0 right-0  flex flex-col  h-screen work-main'>
             <h1 className='text-5xl text-center font-serif italic'>
                 What I Do?
             </h1>
             <div className='flex items-center justify-evenly work-frames'>
-                <div className='image-frame'>
+                <div className='image-frame w-full'>
                     <div
                         data-aos="fade-up-right"
                         data-aos-duration="1000"
@@ -29,7 +29,8 @@ export default function page() {
                             alt='brand'
                             width={200}
                             height={200}
-                            style={{ height: '250px', width: '230px' }}
+                            className='work-frame-Img'
+                            style={{ height: '250px', width: '300px' }}
                         />
                         <h1 className='text-2xl font-bold p-2'>AYIRA PEB SOLUTION</h1>
                         <p className='pl-2 text-red-500 text-lg font-bold'>Founder</p>
@@ -43,7 +44,7 @@ export default function page() {
                         className="l-border-bottom"></div>
 
                 </div>
-                <div className='image-frame'>
+                <div className='image-frame w-full'>
                     <div
                         data-aos="fade-up-right"
                         data-aos-duration="1000"
@@ -63,7 +64,8 @@ export default function page() {
                             alt='brand'
                             width={100}
                             height={100}
-                            style={{ width: '250px', height: '230px' }}
+                            className='work-frame-Img'
+                            style={{ width: '300px', height: '230px' }}
                         />
                         <h1 className='text-2xl font-bold p-2'>LinkedIn Brand <br /> Stratergist</h1>
                         <p className='pl-2 text-red-500 text-lg font-bold'>Strategist</p>

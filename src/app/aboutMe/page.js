@@ -4,7 +4,7 @@ import '../mobile.css'
 function page() {
   return (
     <div className='relative h-screen whoamI-main'>
-        <h1 className='absolute top-0 left-0 right-0 m-auto text-5xl text-center font-serif italic'>
+        <h1 className='absolute top-24 left-0 right-0 m-auto text-5xl text-center font-serif italic'>
                 Who Am I?
             </h1>
     <div className='absolute top-0 bottom-0 flex items-center justify-items-end justify-evenly whoamI'>
@@ -33,11 +33,11 @@ function page() {
             data-aos-delay="200"
             data-aos-duration="2000"
             className='bg-yellow-300 drop-shadow-xl p-8 w-3/5 h-full rounded-md whoamI-card'>
-                <h1>
+                <h2>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     <br/>
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Know me more
-                </h1>
+                </h2>
             </div>
 
         </div>
