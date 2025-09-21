@@ -162,7 +162,7 @@ function Page() {
             </div>
             <footer className='absolute  w-full left-0 right-0  overflow-hidden bg-black jourFooter' style={{borderTopLeftRadius:'10rem',borderTopRightRadius:'10rem'}}>
                 <div className='flex items-center justify-center gap-12 text-white text-xl p-8'>
-                    <p>Let's Connect !!</p>
+                    <p>Ping me at !!</p>
                     <a href="https://www.instagram.com/vaishnavi_harish19/" target="blank"><Image
           src={"/insta.png"}
           width={30}
